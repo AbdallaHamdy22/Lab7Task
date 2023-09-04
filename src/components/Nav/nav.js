@@ -17,13 +17,29 @@ function NavScrollExample() {
           >
             <NavLink to="/" className="nav-link" style={({ isActive }) => {
               return {
-                color:(isActive)?"red":""
+                color:(isActive)?"green":""
               }
             }}>Home</NavLink>
-            <NavLink to="products" className="nav-link">Products</NavLink>
-            <NavLink to="aboutUs" className="nav-link">About Us</NavLink>
-            <NavLink to="contactUs" className="nav-link">Contact Us</NavLink>
-            <NavLink to="join" className="nav-link">join</NavLink>
+            <NavLink to="products" className="nav-link" style={({ isActive }) => {
+              return {
+                color:(isActive)?"green":""
+              }
+            }}>Products</NavLink>
+            <NavLink to="aboutUs" className="nav-link" style={({ isActive }) => {
+              return {
+                color:(isActive)?"green":""
+              }
+            }}>About Us</NavLink>
+            <NavLink to="contactUs" className="nav-link" style={({ isActive }) => {
+              return {
+                color:(isActive)?"green":""
+              }
+            }}>Contact Us</NavLink>
+            <NavLink to="join" className="nav-link" style={({ isActive }) => {
+              return {
+                color:(isActive)?"green":""
+              }
+            }}>join</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
